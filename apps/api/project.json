@@ -13,11 +13,13 @@
     },
     "test": {
       "executor": "nx:run-commands",
-      "options": { "cwd": "apps/api", "command": "pnpm run test" }
+      "options": { "cwd": "apps/api", "command": "pnpm run test" },
+      "dependsOn": ["build"]
     },
     "lint": {
       "executor": "nx:run-commands",
-      "options": { "cwd": "apps/api", "command": "pnpm run lint" }
+      "options": { "cwd": "apps/api", "command": "pnpm run lint" },
+      "dependsOn": ["build"]
     }
   }
 }
