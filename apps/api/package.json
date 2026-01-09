@@ -1,0 +1,19 @@
+{
+  "name": "@your-scope/api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/main.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js",
+    "test": "vitest --run",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@your-scope/ui": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "*",
+    "@types/node": "*"
+  }
+}
