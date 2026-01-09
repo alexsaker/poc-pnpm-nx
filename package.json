@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "nx": "nx",
+    "commit": "pnpm dlx czg",
     "audit": "pnpm audit",
     "prettier:check": "pnpm prettier --check .",
     "prettier:fix": "pnpm prettier --write .",
@@ -21,8 +22,10 @@
     "@swc-node/register": "~1.9.1",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
+    "cz-git": "^1.12.0",
     "eslint": "^9.39.2",
     "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
     "nx": "22.3.3",
     "prettier": "~3.6.2",
     "tslib": "^2.3.0",
