@@ -8,7 +8,8 @@
     },
     "build": {
       "executor": "nx:run-commands",
-      "options": { "cwd": "apps/api", "command": "pnpm run build" }
+      "options": { "cwd": "apps/api", "command": "pnpm run build" },
+      "dependsOn": ["^build"]
     },
     "test": {
       "executor": "nx:run-commands",
