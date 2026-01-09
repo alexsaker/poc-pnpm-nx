@@ -3,7 +3,12 @@
   "compilerOptions": {
     "outDir": "dist",
     "noEmitOnError": false,
-    "types": ["vitest/globals"]
+    "types": ["vitest/globals"],
+    "composite": true,
+    "rootDir": "../../"
   },
-  "include": ["src/**/*.ts", "__tests__/**/*.ts", "vitest.config.ts"]
+  "include": ["src/**/*.ts", "__tests__/**/*.ts", "vitest.config.ts", "../../packages/ui/src/**/*"],
+  "references": [
+    { "path": "../../packages/ui" }
+  ]
 }
