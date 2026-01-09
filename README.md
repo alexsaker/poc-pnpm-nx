@@ -1,4 +1,4 @@
-# POC `PNPM NX`
+# `POC PNPM NX`
 
 ## Overview
 
